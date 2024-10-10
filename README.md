@@ -1,2 +1,2 @@
 My Resume web site
-https://gavriles.github.io/resume
+https://bo-gavriles.github.io/resume
