@@ -133,27 +133,15 @@
 }
 
 footer {
-    padding: 50px 0 0 0; /* Отступы для футера */
-    
-    .social {
-        list-style: none; /* Убираем стандартные маркеры списка */
-        padding: 0; /* Убираем внутренние отступы у списка */
-        margin: 0; /* Убираем внешние отступы у списка */
-        
-        li {
-            display: inline-block; /* Изменяем на inline-block для более точного контроля */
-            margin-left: 20px;
-
-            a {
-                font-size: em(20); /* Убедитесь, что у вас есть правильная функция для em */
-                color: lighten($primary, 40%); /* Цвет ссылки */
-                text-decoration: none; /* Убираем подчеркивание */
-                transition: color 0.3s ease; /* Плавный переход цвета */
-
-                &:hover {
-                    color: lighten($primary, 20%); /* Цвет при наведении */
-                }
-            }
-        }
-    }
+	padding: 50px 0px 0px 0px;
+	.social {
+		li {
+			display: inline;
+			margin-left: 20px;
+			a {
+				font-size: em(20);
+				color: lighten($primary, 40%)
+			}
+		}
+	}
 }
