@@ -149,11 +149,28 @@ a:hover {
     color: #fff; }
 
 footer {
-  padding: 50px 0px 0px 0px; }
-  footer .social li {
-    display: inline;
-    margin-left: 20px; }
-    footer .social li a {
-      font-size: 1.25em;
-      color: #999999; }
+    padding: 50px 0 0 0; /* Отступы для футера */
+}
+
+footer .social {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы у списка */
+    margin: 0; /* Убираем внешние отступы у списка */
+}
+
+footer .social li {
+    display: inline; /* Указываем, что элементы списка будут отображаться в строку */
+    margin-left: 20px; /* Отступ слева для элементов списка */
+}
+
+footer .social li a {
+    font-size: 1.25em; /* Размер шрифта для ссылок */
+    color: #999999; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+footer .social li a:hover {
+    color: #666666; /* Цвет ссылок при наведении */
+}
 
