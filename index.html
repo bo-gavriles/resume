@@ -162,29 +162,33 @@
         </ul>
     </div>
 </div>
-
-
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- NFT Mint Section -->
 <title>NFT BSC TESTNET</title>
-    <style>
-        .nft-mint-container {
-            display: none; /* Скрывает контейнер по умолчанию */
-            margin-top: 20px;
-        }
-        button {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
+<style>
+    .nft-mint-container {
+        display: none; /* Скрывает контейнер по умолчанию */
+        margin-top: 20px;
+        text-align: center; /* Центрирует текст и элементы внутри */
+    }
+    button {
+        margin-top: 10px;
+        display: inline-block; /* Делает кнопку inline-block для центрирования */
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    /* Центрирование кнопки по горизонтали */
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Для центрирования по вертикали */
+    }
+</style>
 
-    <!-- Кнопка для раскрытия секции -->
-    <button onclick="toggleMintSection()">IF YOU LIKE NFT</button>
+    <!-- Контейнер с кнопкой, центрированной по горизонтали и вертикали -->
+    <div class="button-container">
+        <button onclick="toggleMintSection()">IF YOU LIKE NFT</button>
+    </div>
 
     <!-- NFT Mint Section -->
     <div class="nft-mint-container" id="nftMintSection">
@@ -205,8 +209,6 @@
             }
         }
     </script>
-
-
     <!-- Skills -->
     <div class="skills section second" id="skills">
         <div class="container">
