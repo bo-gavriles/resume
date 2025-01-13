@@ -169,6 +169,7 @@
         </div>
     </div>
 
+ <!-- Контейнер с кнопкой, центрированной по горизонтали -->
     <div class="button-container">
         <button onclick="toggleMintSection()">IF YOU LIKE NFT</button>
     </div>
@@ -182,15 +183,17 @@
     </div>
 
     <script>
+        // Функция для переключения видимости секции
         function toggleMintSection() {
             var section = document.getElementById('nftMintSection');
             if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block'; 
+                section.style.display = 'block'; // Показывает секцию
             } else {
-                section.style.display = 'none'; 
+                section.style.display = 'none'; // Скрывает секцию
             }
         }
     </script>
+
 
     <!-- Skills -->
     <div class="skills section second" id="skills">
