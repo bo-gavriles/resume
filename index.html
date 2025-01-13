@@ -7,16 +7,13 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-8NSGXV8XQP');
-
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Resume of Bogdan Gavrilets">
     <meta name="author" content="Bogdan Gavrilets">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Bogdan Gavrilets</title>
     <link rel="stylesheet" href="css/kube.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -71,8 +68,186 @@
         .button-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh; /* Для центрирования по вертикали */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="main-nav">
+        <div class="container">
+            <header class="group top-nav">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                    <span class="logo">Bogdan Gavrilets</span>
+                </div>
+                <nav id="navbar-1" class="navbar item-nav">
+                    <ul>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p>Hi, I’m Bogdan Gavrilets</p>
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="img/ava.png" alt="Avatar">
+                </div>
+                <div class="unit-80">
+                    <h1>I live in<br><span id="typed"></span></h1>
+                </div>
+                <p>
+                    I am passionate about high-tech initiatives, including NASA, BSC, ARBITRUM and ETH hackathons, and artificial intelligence. As an exceptional product manager with a background in the tech industry, I have a proven track record of successful projects.
+                </p>
+                <a href="https://calendly.com/gavriles" class="btn">Book a meeting</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experiences -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Work<br>Experiences</h1>
+            <ul class="work-list">
+                <li><strong>BackDates.wtf | Founder & CEO (Nov 2024 - Now)</strong>
+                    <ul>
+                        <li><b>Product Development & Strategy:</b> Leading the creation and growth of BackDates.wtf with a focus on innovative technologies, including AI and blockchain, to enhance the user experience.</li>
+                        <li><b>Team Leadership & Management:</b> Coordinating cross-functional teams to ensure effective collaboration between developers, marketers, and partners.</li>
+                        <li><b>Fundraising & Investor Relations:</b> Securing investments for service expansion, developing fundraising strategies, and building long-term partnerships.</li>
+                        <li><b>Market Expansion & User Acquisition:</b> Launching and promoting the service in new markets, developing strategies for user acquisition and retention.</li>
+                        <li><b>Crypto Integration & Payments:</b> Implementing cryptocurrency payments for subscriptions and monetization, managing payment infrastructure and transaction security.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Product Manager at Close Venture Capital (Sep 2020 - Oct 2021)</strong>
+                    <ul>
+                        <li><b>Cross-Functional Team Leadership:</b> Effectively led and coordinated sales, development, and stakeholders by fostering clear communication and collaboration.</li>
+                        <li><b>Strategic Marketing:</b> Strategic marketing efforts significantly boosted product visibility and adoption in the market.</li>
+                        <li><b>Product Definition:</b> Clarified the product's goals, identified the target audience, and established its value proposition, providing clear guidance for the development process.</li>
+                        <li><b>End-to-End Product Management:</b> Oversaw the entire product lifecycle, ensuring its technical robustness and alignment with market needs.</li
+Copilot was interrupted before it could finish this message.
+Получились огромные отсупы сверху и снизу, так быть не должно 
+ <!-- Контейнер с кнопкой, центрированной по горизонтали -->
+    <div class="button-container">
+        <button onclick="toggleMintSection()">IF YOU LIKE NFT</button>
+    </div>
+
+    <!-- NFT Mint Section -->
+    <div class="nft-mint-container" id="nftMintSection">
+        <h1>Hey, check out what I can do: MINT NFT "ALTUSHKA"</h1>
+        <p>LIMITED EDITION 303 - ABSOLUTELY FREE RANDOM ANIME MINT</p>
+        <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*uQdkV7ZgUcYAe00AlALjFw.png" alt="NFT Altushka">
+        <button><a href="https://blockchainlogicwriter.medium.com/guide-to-using-metamask-and-minting-your-altushka-nft-on-binance-smart-chain-testnet-07fcae478ac1" target="_blank">Mint Now - Medium Guide</a></button>
+    </div>
+
+    <script>
+        // Функция для переключения видимости секции
+        function toggleMintSection() {
+            var section = document.getElementById('nftMintSection');
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block'; // Показывает секцию
+            } else {
+                section.style.display = 'none'; // Скрывает секцию
+            }
+        }
+    </script>
+
+что не так
+Чтобы убрать большие отступы сверху и снизу и центрировать кнопку по горизонтали в том же ряду, обновите CSS следующим образом:
+
+CSS
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto; /* Убираем фиксированную высоту */
+}
+Public code references from 6 repositories
+Теперь обновите HTML так же, чтобы включить этот CSS:
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NSGXV8XQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8NSGXV8XQP');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Bogdan Gavrilets">
+    <meta name="author" content="Bogdan Gavrilets">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdan Gavrilets</title>
+    <link rel="stylesheet" href="css/kube.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        .intro h1:before {
+            content: 'Bo';
+        }
+        .bg-custom {
+            background-color: #FF69B4;
+        }
+        .nft-mint-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .nft-mint-container h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .nft-mint-container p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .nft-mint-container img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .nft-mint-container button {
+            background-color: #FF69B4;
+            color: #000000; 
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nft-mint-container button:hover {
+            background-color: #45A049; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: auto; /* Убираем фиксированную высоту */
         }
     </style>
 </head>
@@ -169,7 +344,7 @@
         </div>
     </div>
 
- <!-- Контейнер с кнопкой, центрированной по горизонтали -->
+    <!-- Контейнер с кнопкой, центрированной по горизонтали -->
     <div class="button-container">
         <button onclick="toggleMintSection()">IF YOU LIKE NFT</button>
     </div>
@@ -193,7 +368,6 @@
             }
         }
     </script>
-
 
     <!-- Skills -->
     <div class="skills section second" id="skills">
