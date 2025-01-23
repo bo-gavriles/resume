@@ -13,7 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Resume of Bogdan Gavrilets">
   <meta name="author" content="Bogdan Gavrilets">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bogdan Gavrilets</title>
   <link rel="stylesheet" href="css/kube.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -44,6 +43,13 @@
     }
     .center-button-container button:hover {
       background-color: #45A049; 
+    }
+    #hiddenText {
+      display: none;
+      margin: 20px 0;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
     }
   </style>
 </head>
@@ -147,6 +153,9 @@
   <div class="center-button-container">
     <button>IF YOU LIKE FREE NFT...</button>
   </div>
+  <div id="hiddenText">
+    This is the revealed text!
+  </div>
 
   <!-- Skills -->
   <div class="skills section second" id="skills">
@@ -246,6 +255,13 @@
         contentType: "html",
         loop: true,
         resetCallback: function() { newTyped(); }
+      });
+
+      // Add event listener for button click to reveal text
+      const button = document.querySelector('.center-button-container button');
+      const hiddenText = document.getElementById('hiddenText');
+      button.addEventListener('click', () => {
+        hiddenText.style.display = hiddenText.style.display === 'none' ? 'block' : 'none';
       });
     });
   </script>
