@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NSGXV8XQP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8NSGXV8XQP');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bogdan Gavrilets - NFT Mint</title>
+    <meta name="description" content="Resume of Bogdan Gavrilets">
+    <meta name="author" content="Bogdan Gavrilets">
+    <title>Bogdan Gavrilets</title>
+    <link rel="stylesheet" href="css/kube.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
+        .intro h1:before {
+            content: 'Bo';
         }
-        .mint-btn {
+        .bg-custom {
             background-color: #FF69B4;
-            color: white;
-            font-size: 18px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .mint-btn:hover {
-            background-color: #45A049;
         }
         .nft-mint-container {
             background-color: #fff;
@@ -31,7 +36,16 @@
             margin: 20px auto;
             padding: 20px;
             text-align: center;
-            display: none; /* Hidden by default */
+        }
+        .nft-mint-container h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .nft-mint-container p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
         }
         .nft-mint-container img {
             width: 100%;
@@ -40,7 +54,7 @@
         }
         .nft-mint-container button {
             background-color: #FF69B4;
-            color: #000;
+            color: #000000; 
             border: none;
             padding: 15px 20px;
             border-radius: 5px;
@@ -48,46 +62,138 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         .nft-mint-container button:hover {
             background-color: #45A049;
-        }
-        .description {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #333;
-        }
-        .description p {
-            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-
-    <button class="mint-btn" onclick="toggleMintSection()">Mint NFT "ALTUSHKA"</button>
-
-    <div class="nft-mint-container" id="nftMintSection">
-        <h1>Hey, check out what I can do: MINT NFT "ALTUSHKA"</h1>
-        <p>LIMITED EDITION 303 - ABSOLUTELY FREE RANDOM ANIME MINT</p>
-        <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*uQdkV7ZgUcYAe00AlALjFw.png" alt="NFT Altushka">
-        <button><a href="https://blockchainlogicwriter.medium.com/guide-to-using-metamask-and-minting-your-altushka-nft-on-binance-smart-chain-testnet-07fcae478ac1" target="_blank">Mint Now - Medium Guide</a></button>
-        
-        <!-- Description of the project -->
-        <div class="description">
-            <h2>About this project</h2>
-            <p>This is a fully custom solution I developed from A to Z, including smart contracts and the front-end integration. I made the process of minting NFTs on the Binance Smart Chain Testnet straightforward. Feel free to try out the minting process yourself using the 'Mint Now' button and follow the detailed guide on Medium. All of this is built entirely by me with passion and attention to detail.</p>
+    <!-- Navigation -->
+    <div class="main-nav">
+        <div class="container">
+            <header class="group top-nav">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                    <span class="logo">Bogdan Gavrilets</span>
+                </div>
+                <nav id="navbar-1" class="navbar item-nav">
+                    <ul>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
     </div>
 
-    <script>
-        function toggleMintSection() {
-            var nftSection = document.getElementById('nftMintSection');
-            if (nftSection.style.display === 'none' || nftSection.style.display === '') {
-                nftSection.style.display = 'block'; // Show the section
-            } else {
-                nftSection.style.display = 'none'; // Hide the section
-            }
-        }
-    </script>
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p>Hi, I’m Bogdan Gavrilets</p>
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="img/ava.png" alt="Avatar">
+                </div>
+                <div class="unit-80">
+                    <h1>I live in<br><span id="typed"></span></h1>
+                </div>
+                <p>
+                    I am passionate about high-tech initiatives, including NASA, BSC, ARBITRUM and ETH hackathons, and artificial intelligence. As an exceptional product manager with a background in technical writing and software development, I effectively contribute to various projects.
+                    <a href="https://calendly.com/gavriles" class="btn">Book a meeting</a>
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <!-- Work Experiences -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Work<br>Experiences</h1>
+            <ul class="work-list">
+                <li><strong>Corporate Registration Specialist at Tochka Bank (Aug 2018 - Sep 2020)</strong>
+                    <ul>
+                        <li>Expert Consultation: Provided valuable guidance to corporate clients within the fintech and online banking sectors.</li>
+                        <li>Agile Methodology: Streamlined sales processes using B2B agile scrum methodologies, enhancing operational efficiency.</li>
+                        <li>Compliance Advisory: Guided clients on regulatory compliance best practices within the fintech industry.</li>
+                        <li>Financial Systems Navigation: Ensured successful registration and compliance for corporate clients.</li>
+                    </ul>
+                </li>
+                <li><strong>Product Manager at Close Venture Capital (Sep 2020 - Oct 2021)</strong>
+                    <ul>
+                        <li>Cross-Functional Team Leadership: Effectively led and coordinated sales, development, and stakeholders by fostering clear communication and collaboration.</li>
+                        <li>Strategic Marketing: Strategic marketing efforts significantly boosted product visibility and adoption in the market.</li>
+                        <li>Product Definition: Clarified the product's goals, identified the target audience, and established its value proposition, providing clear guidance for the development process.</li>
+                        <li>End-to-End Product Management: Oversaw the entire product lifecycle, ensuring its technical robustness and alignment with market needs.</li>
+                    </ul>
+                </li>
+                <li><strong>Startup Owner at MetaPool.me (Dec 2021 - May 2023)</strong>
+                    <ul>
+                        <li>Team Building: Successfully built and managed a diverse team of 15 individuals, integrating their various skills to tackle the challenges faced by a fintech startup.</li>
+                        <li>Bootstrapping & Resourcefulness: Despite initial lack of investments, managed to launch and develop the product by maximizing the utilization of limited resources.</li>
+                        <li>Product Development: Directed the development of the product, identifying crucial features and ensuring the delivery of high-quality solutions.</li>
+                        <li>Problem-Solving: Efficiently resolved software issues and adapted to changing circumstances.</li>
+                        <li>Persistence: Demonstrated resilience in the face of funding setbacks, enhancing capability to navigate complex challenges effectively.</li>
+                    </ul>
+                </li>
+                <li><strong>Blockchain Logic Writer | Technical Writer (Jun 2023 - Nov 2024)</strong>
+                    <ul>
+                        <li>Technical Documentation Development: Created detailed and clear documents for various blockchain projects, ensuring comprehensive understanding and accessibility.</li>
+                        <li>Smart Contract Coding: Participated in the development and optimization of smart contracts using Solidity, enhancing blockchain project functionality and security.</li>
+                        <li>Training and Counseling: Assisted new project members in quickly getting up to speed and contributing effectively to the development process.</li>
+                    </ul>
+                </li>
+                <li><strong>BackDates.wtf | Founder & CEO (Nov 2024 - Now)</strong>
+                    <ul>
+                        <li><b>Product Development & Strategy:</b> Leading the creation and growth of BackDates.wtf with a focus on innovative technologies, including AI and blockchain, to enhance the user experience.</li>
+                        <li><b>Team Leadership & Management:</b> Coordinating cross-functional teams to ensure effective collaboration between developers, marketers, and partners.</li>
+                        <li><b>Fundraising & Investor Relations:</b> Securing investments for service expansion, developing fundraising strategies, and building long-term partnerships.</li>
+                        <li><b>Market Expansion & User Acquisition:</b> Launching and promoting the service in new markets, developing strategies for user acquisition and retention.</li>
+                        <li><b>Crypto Integration & Payments:</b> Implementing cryptocurrency payments for subscriptions and monetization, managing payment infrastructure and transaction security.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- NFT Mint Section -->
+    <div class="nft-mint-container">
+        <h1>This is a fully custom solution I developed from A to Z, including smart contracts and the front-end integration.</h1>
+        <p>I made the process of minting NFTs on the Binance Smart Chain Testnet straightforward. Feel free to try out the minting process yourself using the 'Mint Now' button and follow the detailed guide on Medium. All of this is built entirely by me with passion and attention to detail.</p>
+        <p>LIMITED EDITION 303 - ABSOLUTELY FREE RANDOM ANIME MINT</p>
+        <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*uQdkV7ZgUcYAe00AlALjFw.png" alt="NFT Altushka">
+        <button><a href="https://blockchainlogicwriter.medium.com/guide-to-using-metamask-and-minting-your-altushka-nft-on-binance-smart-chain-testnet-07fcae478ac1" target="_blank">Mint Now - Medium Guide</a></button>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Had experience with:</h1>
+            <ul class="skill-list list-row">
+                <li>Smart Contracts</li>
+                <li>Cryptography</li>
+                <li>Security Best Practices</li>
+                <li>Web3.js</li>
+                <li>Solidity</li>
+                <li>React</li>
+                <li>AI/Blockchain</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer section">
+        <div class="container">
+            <footer class="group">
+                <div class="unit-25">
+                    <p>2025 © All rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
