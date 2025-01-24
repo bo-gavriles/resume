@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Resume of Bogdan Gavrilets">
     <meta name="author" content="Bogdan Gavrilets">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bogdan Gavrilets</title>
     <link rel="stylesheet" href="css/kube.min.css">
@@ -24,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <style>
-        /* Additional styles for the NFT section */
+        /* Centering the Mint Button */
         .mint-btn {
             background-color: #FF69B4;
             color: white;
@@ -34,10 +33,14 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            display: block;
+            margin: 20px auto;
         }
         .mint-btn:hover {
             background-color: #45A049;
         }
+
+        /* NFT Mint Section Styles */
         .nft-mint-container {
             background-color: #fff;
             border-radius: 10px;
@@ -46,7 +49,6 @@
             margin: 20px auto;
             padding: 20px;
             text-align: center;
-            display: none; /* Hidden by default */
         }
         .nft-mint-container img {
             width: 100%;
@@ -65,6 +67,33 @@
         }
         .nft-mint-container button:hover {
             background-color: #45A049;
+        }
+
+        /* Additional UI Styling */
+        .main-nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .main-nav .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -88,7 +117,7 @@
         </div>
     </div>
 
-    <!-- Introduction -->
+    <!-- Introduction Section -->
     <div class="intro section" id="about">
         <div class="container">
             <p>Hi, I’m Bogdan Gavrilets</p>
@@ -100,56 +129,42 @@
                     <h1>I live in<br><span id="typed"></span></h1>
                 </div>
                 <p>
-                    I am passionate about high-tech initiatives, including NASA, BSC, ARBITRUM and ETH hackathons, and artificial intelligence. As an exceptional product manager with a background in technical writing and software development, I effectively contribute to various projects.
+                    I am passionate about high-tech initiatives, including NASA, BSC, ARBITRUM, and ETH hackathons, and artificial intelligence. As an exceptional product manager with a background in technical writing and software development, I effectively contribute to various projects.
                     <a href="https://calendly.com/gavriles" class="btn">Book a meeting</a>
                 </p>
             </div>
         </div>
     </div>
 
-    <!-- Work Experiences -->
-    <div class="work section second" id="experiences">
-        <div class="container">
-            <h1>Work<br>Experiences</h1>
-            <ul class="work-list">
-                <!-- List of Work Experiences -->
-            </ul>
-        </div>
-    </div>
-
     <!-- NFT Mint Section -->
     <button class="mint-btn" onclick="toggleMintSection()">Mint NFT "ALTUSHKA"</button>
-    <div class="nft-mint-container" id="nftMintSection">
+    <div class="nft-mint-container" id="nftMintSection" style="display: none;">
         <h1>Hey, check out what I can do: MINT NFT "ALTUSHKA"</h1>
         <p>LIMITED EDITION 303 - ABSOLUTELY FREE RANDOM ANIME MINT</p>
         <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*uQdkV7ZgUcYAe00AlALjFw.png" alt="NFT Altushka">
         <button><a href="https://blockchainlogicwriter.medium.com/guide-to-using-metamask-and-minting-your-altushka-nft-on-binance-smart-chain-testnet-07fcae478ac1" target="_blank">Mint Now - Medium Guide</a></button>
-        
-        <!-- Description of the project -->
-        <div class="description">
-            <h2>About this project</h2>
-            <p>This is a fully custom solution I developed from A to Z, including smart contracts and the front-end integration. I made the process of minting NFTs on the Binance Smart Chain Testnet straightforward. Feel free to try out the minting process yourself using the 'Mint Now' button and follow the detailed guide on Medium. All of this is built entirely by me with passion and attention to detail.</p>
-        </div>
     </div>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <div class="skills section second" id="skills">
         <div class="container">
             <h1>Had experience with:</h1>
             <ul class="skill-list list-flat">
-                <!-- List of skills -->
+                <li>Programming Languages: Solidity, Python, HTML, JavaScript, CSS, SQL</li>
+                <li>Low/No Code: Bubble, Airtable, Zapier, Webflow</li>
+                <li>Development Tools: Visual Studio Code, Git Bash, GitHub, GitLab</li>
+                <li>Cloud Platforms: Google Cloud Platform (GCP)</li>
+                <li>Analytics: Google Analytics</li>
+                <li>Project Management: Asana, Jira, Notion</li>
             </ul>
         </div>
     </div>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <div class="contact section second bg-custom" id="contact">
         <div class="container">
-            <h1>Contact<br>Me</h1>
+            <h1>Contact Me</h1>
             <p>If you would like to get in touch, please reach out via email or connect with me on linkedin or TG.</p>
-            <ul class="social list-flat">
-                <!-- Social Links -->
-            </ul>
         </div>
     </div>
 
@@ -168,24 +183,11 @@
         </div>
     </footer>
 
-    <!-- Javascript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/kube.min.js"></script>
     <script src="js/site.js"></script>
     <script>
-        function newTyped() {} 
-        $(function() {
-            $("#typed").typed({
-                strings: ["Montevideo", "the Tech Ecosystem", "the Digital Economy", "everywhere"],
-                typeSpeed: 90,
-                backDelay: 700,
-                contentType: "html",
-                loop: true,
-                resetCallback: function() { newTyped(); }
-            });
-        });
-
         function toggleMintSection() {
             var nftSection = document.getElementById('nftMintSection');
             if (nftSection.style.display === 'none' || nftSection.style.display === '') {
@@ -194,6 +196,16 @@
                 nftSection.style.display = 'none'; // Hide the section
             }
         }
+
+        $(function() {
+            $("#typed").typed({
+                strings: ["Montevideo", "the Tech Ecosystem", "the Digital Economy", "everywhere"],
+                typeSpeed: 90,
+                backDelay: 700,
+                contentType: "html",
+                loop: true
+            });
+        });
     </script>
 </body>
 </html>
